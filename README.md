@@ -1,5 +1,5 @@
 # Automação de testes de API
-## API testada:
+API testada:
 [Restful-booker](https://restful-booker.herokuapp.com/apidoc/index.html)
 
 Testes realizados na linguagem Java,
