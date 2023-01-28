@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: BookingTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.438 s <<< FAILURE! - in BookingTests
+CreateBooking_WithValidData_returnOk  Time elapsed: 0.855 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["bookingdates","depositpaid","firstname","lastname","totalprice"])
+    level: "error"
+    schema: {"loadingURI":"file:/home/maria/Code/apiautomationrestassured/target/test-classes/createBookingRequestSchema.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["bookingdates","depositpaid","firstname","lastname","totalprice"]
+    missing: ["bookingdates","depositpaid","firstname","lastname","totalprice"]
+
+  Actual: {"bookingid":9128,"booking":{"firstname":"Ayanna","lastname":"Dicki","totalprice":74200,"depositpaid":true,"bookingdates":{"checkin":"2018-01-02","checkout":"2018-01-03"},"additionalneeds":""}}
+
+	at BookingTests.CreateBooking_WithValidData_returnOk(BookingTests.java:89)
+
